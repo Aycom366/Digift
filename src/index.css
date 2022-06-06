@@ -22,6 +22,16 @@
   html {
     font-family: PolySans, system-ui, sans-serif;
   }
+  q,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight leading-5;
+  }
   .img {
     @apply w-full h-full object-cover;
   }

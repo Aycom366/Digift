@@ -11,7 +11,7 @@ const Personal = () => {
    flex-col"
     >
       <Banner />
-      <Arrivals />
+      {/* <Arrivals /> */}
       <HappyCustomer />
       <CreateHappiness />
     </section>

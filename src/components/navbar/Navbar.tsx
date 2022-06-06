@@ -2,11 +2,9 @@ import digiftLogo from "~/assets/images/difgitLogo.png";
 
 //icons
 import { FaBars } from "react-icons/fa";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { AiOutlineSearch } from "react-icons/ai";
 
 //utils
-import { Link } from "react-router-dom";
+import { useGlobalContext } from "~/store/Context";
 
 //components
 import { ThemeToggler } from "./ThemeToggler";
@@ -14,6 +12,7 @@ import Mobile from "./Mobile";
 import Desktop from "./Desktop";
 
 const Navbar = () => {
+  const { isNavOpen, setIsNavOpen } = useGlobalContext();
   return (
     <nav className="bg-white dark:bg-slate-800 text-[#8A91A8] shadow-custom ">
       <div className="flex relative flex-col lg:flex-row w-full  px-4 py-4 max-w-[1400px]  mx-auto justify-between items-center">
@@ -25,8 +24,11 @@ const Navbar = () => {
               alt="DifIft Logo"
             />
           </div>
-          <button className="sm:flex lg:hidden ">
-            <FaBars />
+          <button
+            onClick={() => setIsNavOpen(!isNavOpen)}
+            className="sm:flex lg:hidden "
+          >
+            <FaBars className="w-[30px] h-[30px]" />
           </button>
         </div>
 

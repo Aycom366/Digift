@@ -6,7 +6,7 @@ const HappyCustomer = () => {
       <h2 className="font-bold text-[2rem] md:text-[65px] leading-normal md:leading-[72px] text-center w-full max-w-[900px] mx-auto">
         <q>Hear what happy customers are saying about Digift</q>
       </h2>
-      <div className="flex flex-wrap w-full gap-8 sm:grid-cols-2 md:grid-cols-3">
+      <div className="flex flex-wrap w-full gap-8 ">
         {happyCustomerData.map((customer) => (
           <article
             key={customer.id}

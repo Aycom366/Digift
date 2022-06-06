@@ -6,8 +6,8 @@ export const ThemeToggler = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div
-      className="flex justify-end cursor-pointer transition-all duration-1000 ease-in "
       onClick={() => setToggle(!toggle)}
+      className="flex justify-end cursor-pointer  transition-all ease-in-out duration-1000"
     >
       <div className="flex relative items-center justify-between max-w-[100px] w-full p-1 overflow-hidden  bg-[#F3F4F7] h-[42px] rounded-[999px]">
         <div

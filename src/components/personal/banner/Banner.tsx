@@ -5,7 +5,7 @@ import rightSnake from "~/assets/images/snake.png";
 
 const Banner = () => {
   return (
-    <section className="w-full my-[50px] sm:px-4">
+    <section className="w-full my-[100px] sm:px-4">
       <section className="max-w-[1400px] mx-auto w-full h-[600px] bg-[#0069E0] bg-landing-mesh sm:rounded-[32px] px-4 py-[50px] flex items-center justify-center overflow-hidden  relative">
         <div className="content-none absolute hidden sm:flex bottom-0 md:left-[-40%] lg:left-[-10%]">
           <img loading="lazy" src={rightAmazon} alt="Amazon card" />
@@ -15,7 +15,7 @@ const Banner = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[2rem] sm:text-[64px] font-bold leading-normal md:leading-[76px] max-w-[700px] mx-auto text-center text-white">
+          <h1 className="text-[48px] sm:text-[64px] font-bold leading-[50px] md:leading-[76px] max-w-[700px] mx-auto text-center text-white">
             <img
               loading="lazy"
               className="  hidden sm:inline  mr-2 sm:mr-14"
@@ -28,7 +28,7 @@ const Banner = () => {
               className=" hidden sm:inline ml-14"
               src={rightSnake}
               alt="Vector"
-            />
+            />{" "}
             restrictions with our unique gift cards.
           </h1>
           <p className="text-center text-[14px] py-[32px] leading-5 font-semibold text-white max-w-[323px] mx-auto">

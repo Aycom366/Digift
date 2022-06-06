@@ -3,15 +3,53 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { ThemeToggler } from "./ThemeToggler";
 import star from "~/assets/images/star.png";
+import { useGlobalContext } from "~/store/Context";
+import { useEffect, useRef } from "react";
+import useWindowDimension from "~/hooks/useWindowDimension";
 
 const Mobile = () => {
+  const { isNavOpen, setIsNavOpen } = useGlobalContext();
+  const { width } = useWindowDimension();
+  const navContainer = useRef<HTMLDivElement>(null);
+  const navContainerChild = useRef<HTMLDivElement>(null);
+  const handleNavClose = () => setIsNavOpen(false);
+
+  useEffect(() => {
+    const navContainerChildHeight =
+      navContainerChild.current?.getBoundingClientRect().height;
+    if (isNavOpen) {
+      if (navContainer.current !== null)
+        navContainer.current.style.height = `${navContainerChildHeight}px`;
+    } else {
+      if (navContainer.current !== null)
+        navContainer.current.style.height = "0px";
+    }
+  }, [isNavOpen, width]);
+
+  //close nav if window is more than md reoslution
+  useEffect(() => {
+    if (width > 768) {
+      setIsNavOpen(false);
+    }
+  }, [width]);
+
   return (
-    <div className="w-full px-4">
-      <div className="flex bg-white dark:bg-slate-800  text-[#8A91A8] border-t-[.5px] lg:border-none pt-4 z-10 lg:hidden gap-8 w-full flex-col ">
-        <div className="flex   items-center gap-8 justify-between w-full">
+    <div
+      ref={navContainer}
+      className="w-full overflow-hidden transition-all ease-in-out duration-300 px-4"
+    >
+      <div
+        ref={navContainerChild}
+        className="flex transition ease duration-1000 bg-white dark:bg-slate-800  text-[#8A91A8] border-t-[.5px] lg:border-none pt-4 z-10 lg:hidden  gap-4 sm:gap-8 w-full flex-col "
+      >
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 justify-between w-full">
           <ul className="flex gap-4 items-center">
             <li>
-              <Link className="flex items-center gap-2" to="/">
+              <Link
+                className="flex items-center gap-2"
+                to="/"
+                onClick={handleNavClose}
+              >
                 Personal{" "}
                 <span>
                   <MdOutlineKeyboardArrowRight />
@@ -19,7 +57,11 @@ const Mobile = () => {
               </Link>
             </li>
             <li>
-              <Link className="flex items-center gap-2" to="/business">
+              <Link
+                className="flex items-center gap-2"
+                to="/business"
+                onClick={handleNavClose}
+              >
                 Business{" "}
                 <span>
                   <MdOutlineKeyboardArrowRight />
@@ -27,7 +69,7 @@ const Mobile = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex items-center base:w-full sm:w-[350px] gap-2 rounded-[4px] bg-[#F3F4F7] px-4 py-2 ">
+          <div className="flex items-center w-full sm:w-[350px] gap-2 rounded-[4px] bg-[#F3F4F7] px-4 py-2 ">
             <span>
               <AiOutlineSearch />
             </span>

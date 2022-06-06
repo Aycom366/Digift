@@ -3,14 +3,22 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { ThemeToggler } from "./ThemeToggler";
 import star from "~/assets/images/star.png";
+import { useGlobalContext } from "~/store/Context";
 
 const Desktop = () => {
+  const { setIsNavOpen } = useGlobalContext();
+  const handleNavClose = () => setIsNavOpen(false);
+
   return (
     <>
       <div className=" hidden lg:flex   items-center gap-8 justify-between w-full">
         <ul className="flex gap-4 items-center">
           <li>
-            <Link className="flex items-center gap-2" to="/">
+            <Link
+              className="flex items-center gap-2"
+              to="/"
+              onClick={handleNavClose}
+            >
               Personal{" "}
               <span>
                 <MdOutlineKeyboardArrowRight />
@@ -18,7 +26,11 @@ const Desktop = () => {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-2" to="/business">
+            <Link
+              className="flex items-center gap-2"
+              to="/business"
+              onClick={handleNavClose}
+            >
               Business{" "}
               <span>
                 <MdOutlineKeyboardArrowRight />
