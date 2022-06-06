@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 //components
 import Navbar from "~/components/navbar/Navbar";
 import ScrollToTop from "~/components/shared/ScrollToTop";
+import { AnimatePresence } from "framer-motion";
 
 //pages
 import Business from "~/pages/Business";
@@ -15,10 +16,12 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Personal />} />
-          <Route path="/business" element={<Business />} />
-        </Routes>
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Personal />} />
+            <Route path="/business" element={<Business />} />
+          </Routes>
+        </AnimatePresence>
         <Footer />
       </BrowserRouter>
     </>

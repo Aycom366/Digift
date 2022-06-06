@@ -69,12 +69,12 @@ const Mobile = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex items-center w-full sm:w-[350px] gap-2 rounded-[4px] bg-[#F3F4F7] px-4 py-2 ">
+          <div className="flex items-center base:w-full sm:w-[350px] gap-2 rounded-[4px] bg-[#F3F4F7] dark:border-[1px] dark:bg-slate-800 px-4 py-2 ">
             <span>
               <AiOutlineSearch />
             </span>
             <input
-              className="w-full text-gray-800 bg-transparent border-none  p-0 outline-none"
+              className="w-full text-gray-800 dark:text-gray-200  bg-transparent border-none  p-0 outline-none"
               placeholder="Find cards anywhere"
             />
           </div>

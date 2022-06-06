@@ -2,19 +2,16 @@ import CreateHappiness from "~/components/shared/CreateHappiness";
 import HappyCustomer from "~/components/personal/happyCustomer/HappyCustomer";
 import Arrivals from "~/components/personal/arrivals/Arrivals";
 import Banner from "~/components/personal/banner/Banner";
+import PageContainer from "~/components/shared/PageContainer";
 
-// dark:bg-slate-800 dark:text-white
 const Personal = () => {
   return (
-    <section
-      className="flex bg-white text-slate-900  
-   flex-col"
-    >
+    <PageContainer>
       <Banner />
-      {/* <Arrivals /> */}
+      <Arrivals />
       <HappyCustomer />
       <CreateHappiness />
-    </section>
+    </PageContainer>
   );
 };
 

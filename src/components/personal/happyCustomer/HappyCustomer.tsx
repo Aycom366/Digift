@@ -10,7 +10,7 @@ const HappyCustomer = () => {
         {happyCustomerData.map((customer) => (
           <article
             key={customer.id}
-            className="rounded-[8px] h-[410] flex flex-col flex-[1_0_20em] gap-20 justify-between border-2 py-7 px-10"
+            className="rounded-[8px] h-[410] flex flex-col flex-[1_0_20em] gap-20 justify-between border-2 dark:border-slate-500 py-7 px-10"
           >
             <q className="text-[#8A91A8] leading-8">{customer.info}</q>
             <div className="flex items-center mt-auto gap-4">

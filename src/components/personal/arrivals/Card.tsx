@@ -1,5 +1,6 @@
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { motion } from "framer-motion";
 
 interface IProps {
   category: string;
@@ -17,9 +18,12 @@ const Card = ({
   productDescription,
 }: IProps) => {
   return (
-    <article className="bg-white rounded-lg flex flex-col gap-6 p-[19px_22px] border-2 ring-[#EBEFF5]">
+    <motion.article
+      layout
+      className="bg-white dark:bg-slate-700 rounded-lg flex flex-col gap-6 p-[19px_22px] border-2 dark:border-slate-500 "
+    >
       <header className=" flex items-center justify-start ">
-        <p className="text-[14px] bg-[#F5F5F5]  rounded-[999px]  font-semibold p-[8px_16px] text-[#6F6F80]">
+        <p className="text-[14px] bg-[#F5F5F5] dark:bg-slate-500  rounded-[999px]  font-semibold p-[8px_16px] text-[#6F6F80] dark:text-slate-200">
           {category}
         </p>
       </header>
@@ -51,7 +55,7 @@ const Card = ({
           </button>
         </footer>
       </article>
-    </article>
+    </motion.article>
   );
 };
 

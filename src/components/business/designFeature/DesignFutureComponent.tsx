@@ -7,7 +7,7 @@ interface IProps {
 
 const DesignFutureComponent = ({ children, info }: IProps) => {
   return (
-    <article className="w-full rounded-2xl flex-[1_0_20em] relative h-[450px] sm:h-[600px] p-8 md:p-10 lg:p-16 bg-[#C2DDFF] ">
+    <article className="w-full rounded-2xl flex-[1_0_20em] overflow-hidden relative h-[450px] sm:h-[600px] p-8 md:p-10 lg:p-16 bg-[#C2DDFF] dark:bg-slate-400 ">
       <div className="flex flex-col gap-6 max-w-[400px]">
         {children}
         <p className="font-semibold text-[14px] tracking-[-2%] #000429 leading-6 ">

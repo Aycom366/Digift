@@ -2,18 +2,16 @@ import Api from "~/components/business/Api";
 import DesignFuture from "~/components/business/designFeature/DesignFuture";
 import Expand from "~/components/business/Expand";
 import { WhyDoFast } from "~/components/business/WhyDoFast";
+import PageContainer from "~/components/shared/PageContainer";
 
 const Business = () => {
   return (
-    <section
-      className="flex bg-white text-slate-900  
-   flex-col"
-    >
+    <PageContainer>
       <Expand />
       <WhyDoFast />
       <DesignFuture />
       <Api />
-    </section>
+    </PageContainer>
   );
 };
 

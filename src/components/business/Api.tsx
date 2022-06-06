@@ -5,7 +5,7 @@ const Api = () => {
     <section className="max-w-[1200px] gap-8 mx-auto w-full grid grid-cols-1 sm:grid-cols-2 place-items-center px-4 my-[50px]">
       <div className="w-full">
         <article className="w-full flex flex-col gap-6 max-w-[480px]">
-          <h1 className=" text-[40px] md:text-[40px] lg:text-[56px] tracking-tighter text-[#000429] leading-[50px] md:leading-[50px] lg:leading-[67px] font-bold">
+          <h1 className=" text-[40px] md:text-[40px] lg:text-[56px] tracking-tighter text-[#000429] dark:text-slate-100 leading-[50px] md:leading-[50px] lg:leading-[67px] font-bold">
             Our API is built to be as{" "}
             <span className="text-[#0069E0]">lightweight</span> and efficient as
             possible.

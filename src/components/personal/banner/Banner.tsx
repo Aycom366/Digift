@@ -5,14 +5,19 @@ import rightSnake from "~/assets/images/snake.png";
 
 const Banner = () => {
   return (
-    <section className="w-full my-[100px] sm:px-4">
-      <section className="max-w-[1400px] mx-auto w-full h-[600px] bg-[#0069E0] bg-landing-mesh sm:rounded-[32px] px-4 py-[50px] flex items-center justify-center overflow-hidden  relative">
-        <div className="content-none absolute hidden sm:flex bottom-0 md:left-[-40%] lg:left-[-10%]">
-          <img loading="lazy" src={rightAmazon} alt="Amazon card" />
-        </div>
-        <div className="content-none absolute hidden sm:flex bottom-0 md:right-[-20%] lg:right-[0%]">
-          <img loading="lazy" src={leftCard} alt="Amazon card" />
-        </div>
+    <section className="w-full my-[100px] mt-[120px]  sm:px-4">
+      <section className="max-w-[1400px] mx-auto w-full h-[80vh] bg-[#0069E0] bg-landing-mesh sm:rounded-[32px] px-4 py-[50px] flex items-center justify-center overflow-hidden  relative">
+        <img
+          className="content-none absolute hidden sm:flex bottom-0 md:left-[-40%] lg:left-[-10%]"
+          src={rightAmazon}
+          alt="Amazon card"
+        />
+        <img
+          className="content-none absolute hidden sm:flex bottom-0 md:right-[-20%] lg:right-[0%]"
+          loading="lazy"
+          src={leftCard}
+          alt="Amazon card"
+        />
 
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-[48px] sm:text-[64px] font-bold leading-[50px] md:leading-[76px] max-w-[700px] mx-auto text-center text-white">

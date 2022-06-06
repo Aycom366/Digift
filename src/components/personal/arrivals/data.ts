@@ -50,111 +50,100 @@ export const ArrivalCategories = [
 //The only option I have is to group the products object to fit the designs made by the designer
 export const ArrivalData = [
   {
-    products: [
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-    ],
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
   },
   {
-    products: [
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-    ],
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
   },
   {
-    products: [
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-      {
-        category: "ecommerce",
-        productName: "Samsung Galaxy S10",
-        productImage: amazon,
-        productPrice: 2000,
-        productDescription:
-          "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
-      },
-    ],
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
+  },
+  {
+    category: "Giftcard",
+    productName: "Samsung Galaxy S10",
+    productImage: amazon,
+    productPrice: 2000,
+    productDescription:
+      "Amazon Gift Card is a global fashion destination for 20-somethings, selling all the freshest styles complemented by exclusive content....",
   },
 ];

@@ -15,9 +15,9 @@ const Navbar = () => {
   const { isNavOpen, setIsNavOpen } = useGlobalContext();
   const navigate = useNavigate();
   return (
-    <nav className="bg-white dark:bg-slate-800 text-[#8A91A8] shadow-custom ">
+    <nav className="bg-white fixed top-0 w-full z-20 dark:bg-slate-800 text-[#8A91A8] shadow-custom ">
       <div className="flex relative flex-col lg:flex-row w-full  px-4 py-4 max-w-[1400px]  mx-auto justify-between items-center">
-        <div className="w-full  flex justify-between items-center">
+        <div className="w-full sm:w-auto flex justify-between items-center">
           <div
             role="link"
             onClick={() => navigate("/")}

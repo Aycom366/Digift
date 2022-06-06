@@ -16,9 +16,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className=" dark:bg-slate-800 mt-[50px] w-full ">
+    <footer className=" bg-white dark:bg-slate-800 pt-[50px] w-full ">
       <div className="w-full flex flex-col max-w-[1400px] mx-auto px-4 ">
-        <section className="w-full h-full  text-[14px] py-16 border-y-[1px]  base:grid-cols-1 md:grid-cols-responsive max-w-[1024px] mx-auto gap-12  border-x-slate-400-50 grid">
+        <section className="w-full h-full  text-[14px] py-16 border-y-[1px] dark:border-slate-500  base:grid-cols-1 md:grid-cols-responsive max-w-[1024px] mx-auto gap-12  border-x-slate-400-50 grid">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 w-full gap-8">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-4">
